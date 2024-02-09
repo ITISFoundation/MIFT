@@ -6,7 +6,7 @@ The library was designed for data in 1D, 2D, and 3D (with one or multiple time s
 
 ## Installation
 ```
-  pip install git+https://github.com/ITISFoundation/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.git
+  pip install git+https://github.com/ITISFoundation/MIFT
 ```
 
 ## Usage
