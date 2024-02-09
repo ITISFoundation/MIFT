@@ -1,0 +1,63 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  A Gaussian-process-model-based approach for robust,
+  independent, and implementation-agnostic validation of
+  complex multi-variable measurement systems: application to
+  SAR measurement systems
+message: >-
+  If you use this software, please cite it using these
+  metadata
+type: software
+authors:
+  - given-names: Cedric
+    family-names: Bujard
+    affiliation: IT'IS Foundation
+  - given-names: Esra
+    family-names: Neufeld
+    affiliation: IT'IS Foundation
+  - given-names: Mark
+    family-names: Douglas
+    affiliation: IT'IS Foundation
+  - given-names: Joe
+    family-names: Wiart
+    affiliation: >-
+      Laboratoire de Traitement et Communication de
+      l’Information (LTCI), C2M, Télécom Paris
+  - given-names: Niels
+    family-names: Kuster
+    affiliation: IT'IS Foundation
+    orcid: 'https://orcid.org/0000-0002-5827-3728'
+repository-code: 'https://github.com/ITISFoundation/publication-IEC62209'
+abstract: >-
+  Resource-efficient and robust validation of complex
+  measurement systems that would require millions of test
+  permutations for comprehensive coverage is an unsolved
+  problem. In the paper, a general, robust, trustworthy,
+  efficient, and comprehensive validation approach based on
+  a Gaussian Process model (GP) of the test system has been
+  developed that can operate system-agnostically, prevents
+  calibration to a fixed set of known validation benchmarks,
+  and supports large configuration spaces. The approach
+  includes three steps that can be performed independently
+  by different parties: 1) GP model creation, 2) model
+  confirmation, and 3) model-based critical search for
+  failures. The new approach has been applied to two systems
+  utilizing different measurement methods for compliance
+  testing of radiofrequency-emitting devices according to
+  two independent standards, i.e., IEC 62209-1528 for
+  scanning systems and IEC 62209-3 for array systems. The
+  results demonstrate that the proposed measurement system
+  validation is practical and feasible. It reduces the
+  effort to a minimum such that it can be routinely
+  performed by any test lab or other user and constitutes a
+  pragmatic approach for establishing validity and effective
+  equivalence of the two measurement device classes.
+license: MIT
+contact:
+  - affiliation: "IT'IS Foundation"
+    email: "bujard@itis.swiss"
+    family-names: Bujard
+    given-names: Cedric
