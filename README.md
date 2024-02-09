@@ -10,8 +10,9 @@ The library was designed for data in 1D, 2D, and 3D (with one or multiple time s
 ```
 
 ## Usage
-All the related functions are implemented in functions.py. 
-To see the example usage in 1D, 2D, and 3D space, please refer to the benchmarks in the tutorials folder, for 1D, 2D and 3D data. 
+All the relevant functions are implemented in classes.py and utils.py.
+To view examples of usage in 1D, 2D, and 3D space, please refer to the benchmarks located in the benchmarks folder for 1D, 2D, and 3D data, respectively.
+For practical demonstrations of the library, please refer to the tutorials to observe how the library can be utilized for processing and reconstructing real deformation data. Sample deformation data can be accessed via: https://zenodo.org/records/10590047. 
 
 ## Support
 If you have any questions or issues, contact karimi@itis.swiss. 
