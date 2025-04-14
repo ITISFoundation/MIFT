@@ -163,6 +163,14 @@ def efficient_unstructured_FFT_3D(
 
     else:
         coef = np.linalg.solve(AA, bb)
+        # Check if AA @ AA_inv ≈ Identity
+        residual = np.linalg.norm(AA @ np.linalg.inv(AA) - np.eye(AA.shape[0]), ord='fro')
+
+        # Optional: Print or raise warning
+        if residual > 1e-1:
+            print("Warning: [AA] might be ill-conditioned. Consider enabling SVD regularization.")
+            
+
 
     return (AA, bb, coef)
 

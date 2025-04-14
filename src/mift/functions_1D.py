@@ -68,6 +68,15 @@ def efficient_unstructured_FFT_1D(
         coef = check_regularization(max_reg_iterations, AA, bb, u, s, vh, sval_nums)
     else:
         coef = np.linalg.solve(AA, bb)
+        # Check if AA @ AA_inv ≈ Identity
+        residual = np.linalg.norm(AA @ np.linalg.inv(AA) - np.eye(AA.shape[0]), ord='fro')
+
+        # Optional: Print or raise warning
+        if residual > 1e-1:
+            print("Warning: [AA] might be ill-conditioned. Consider enabling SVD regularization.")
+        else:
+            print(f"residual = {residual}, [AA] seems well-conditioned.")
+
 
     return (AA, bb, coef)
 
