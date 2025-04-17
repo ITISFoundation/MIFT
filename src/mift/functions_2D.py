@@ -100,12 +100,12 @@ def efficient_unstructured_FFT_2D(
         coef = np.linalg.solve(AA, bb)
         # Check if AA @ AA_inv ≈ Identity
         normalized_residual = np.linalg.norm(AA @ np.linalg.inv(AA) - np.eye(AA.shape[0]), ord='fro')/np.linalg.norm(np.eye(AA.shape[0]), ord='fro')
-        print(f"normalized residual = {normalized_residual}")
 
         # Optional: Print or raise warning
         if normalized_residual > 1e-2:
             print("Warning: [AA] might be ill-conditioned. Consider enabling SVD regularization.")
-
+        else:
+            print(f"normalized residual = {normalized_residual}, [AA] seems well-conditioned.")
 
     return (AA, bb, coef)
 
